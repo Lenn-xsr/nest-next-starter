@@ -1,0 +1,21 @@
+{
+  "name": "@starter/contracts",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Framework-free contracts shared across the workspace: ids, ports and the HTTP shapes the API returns and the web app consumes.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@starter/tsconfig": "workspace:*",
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3"
+  }
+}
