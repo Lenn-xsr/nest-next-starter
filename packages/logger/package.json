@@ -1,0 +1,30 @@
+{
+  "name": "@starter/logger",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Standardized Winston logger (+ Datadog transport) and a NestJS LoggerModule.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@starter/contracts": "workspace:*",
+    "winston": "^3.19.0",
+    "winston-transport": "^4.9.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0"
+  },
+  "devDependencies": {
+    "@starter/tsconfig": "workspace:*",
+    "@nestjs/common": "^11.0.1",
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3"
+  }
+}
